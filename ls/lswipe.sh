@@ -15,7 +15,7 @@ zenity --question
 
 case $? in
 	0) ./googspeak "erasing chip"  &
-	   flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=12000 -c $chip -E -VVV | zenity --progress --title="Chip erasing..." --text="Erasing "$chip"..." --width=300 --auto-close --auto-kill --pulsate --time-remaining
+	   flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=12000 -c $chip -E -VVV > /dev/pts/0 | zenity --progress --title="Chip erasing..." --text="Erasing "$chip"..." --width=300 --auto-close --auto-kill --pulsate --time-remaining
 	case $? in
 		0) 
 		;;
