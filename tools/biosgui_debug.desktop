@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=BIOSGui Debug
+Type=Application
+Exec=/usr/local/bin/biosguirunme_debug
+
