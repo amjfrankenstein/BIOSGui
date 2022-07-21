@@ -1,3 +1,3 @@
 #!/bin/bash
-cd ~/BiosUnlocking/gui/ 
+cd ~/BIOSGui/ 
 gnome-terminal -- python main.py
